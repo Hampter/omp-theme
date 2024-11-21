@@ -77,6 +77,12 @@
           "style": "plain",
           "template": "<#dddddd>(</> {{ if .Unsupported }} {{ else }}{{ .Full }}{{ end }}<#dddddd>)</>",
           "type": "dotnet"
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#dddddd",
+          "template": "  "
         }
       ]
     },
