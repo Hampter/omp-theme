@@ -77,18 +77,6 @@
           "style": "plain",
           "template": "<#dddddd>(</> {{ if .Unsupported }} {{ else }}{{ .Full }}{{ end }}<#dddddd>)</>",
           "type": "dotnet"
-        },
-        {
-          "type": "az",
-          "style": "plain",
-          "foreground": "#9ec3f0",
-          "template": "  <#dddddd>[</> {{.Name}}<#dddddd>]</>"
-        },
-        {
-          "type": "aws",
-          "style": "plain",
-          "foreground": "#faa029",
-          "template": "<#dddddd>[</> {{.Profile}}{{if .Region}}@{{.Region}}{{end}}<#dddddd>]</>"
         }
       ]
     },
@@ -137,6 +125,29 @@
         }
       ],
       "type": "prompt"
+    }
+  ],
+  "tooltips": [
+    {
+      "type": "az",
+      "tips": [
+        "azure",
+        "terraform",
+        "az"
+      ],
+      "style": "plain",
+      "foreground": "#9ec3f0",
+      "template": "  <#dddddd>[</> {{.Name}}<#dddddd>]</>"
+    },
+    {
+      "type": "aws",
+      "tips": [
+        "aws",
+        "terraform"
+      ],
+      "style": "plain",
+      "foreground": "#faa029",
+      "template": "<#dddddd>[</> {{.Profile}}{{if .Region}}@{{.Region}}{{end}}<#dddddd>]</>"
     }
   ],
   "version": 3
