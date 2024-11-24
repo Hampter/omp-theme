@@ -72,6 +72,18 @@
           "template": "<#dddddd>(</> {{ .Full }}<#dddddd>)</>"
         },
         {
+          "type": "tauri",
+          "style": "plain",
+          "foreground": "#24c8db",
+          "template": "<#dddddd>(</> {{ .Full }}<#dddddd>)</>"
+        },
+        {
+          "type": "svelte",
+          "style": "plain",
+          "foreground": "#ff3e00",
+          "template": "<#dddddd>(</> {{ .Full }}<#dddddd>)</>"
+        },
+        {
           "foreground": "#0d6da8",
           "style": "plain",
           "template": "<#dddddd>(</> {{ if .Unsupported }} {{ else }}{{ .Full }}{{ end }}<#dddddd>)</>",
