@@ -68,8 +68,9 @@
         {
           "type": "react",
           "style": "plain",
+          "powerline_symbol": "",
           "foreground": "#7cb0e4",
-          "template": "<#dddddd>( {{ .Full }}<#dddddd>)</>"
+          "template": "<#dddddd>(</> {{ .Full }}<#dddddd>)</>"
         },
         {
           "foreground": "#0d6da8",
