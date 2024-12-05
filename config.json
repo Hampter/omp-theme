@@ -38,6 +38,7 @@
           "type": "path",
           "style": "plain",
           "template": "{{ .Path }}",
+          "style": "full",
           "foreground": "#FF9248"
         },
         {
