@@ -38,7 +38,7 @@
           "type": "path",
           "style": "plain",
           "template": "{{ .Path }}",
-          "style": "full",
+          "style": "agnoster_full",
           "foreground": "#FF9248"
         },
         {
