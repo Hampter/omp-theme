@@ -3,7 +3,7 @@
   "transient_prompt": {
     "enabled": true,
     "foreground": "#ecf7fa",
-    "template": "─> "
+    "template": "───> "
   },
   "blocks": [
     {
