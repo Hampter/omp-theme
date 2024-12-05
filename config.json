@@ -1,5 +1,10 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "transient_prompt": {
+    "enabled": true,
+    "foreground": "#ecf7fa",
+    "template": "─> "
+  },
   "blocks": [
     {
       "alignment": "left",
@@ -39,8 +44,9 @@
           "style": "plain",
           "template": "{{ .Path }}",
           "properties": {
-            "style": "agnoster_full",
-          }
+            "style": "agnoster_short",
+            "max_depth": 5
+          },
           "foreground": "#FF9248"
         },
         {
@@ -135,7 +141,9 @@
         },
         {
           "foreground": "#ecf7fa",
-          "foreground_templates": ["{{ if gt .Code 0 }}#ef5350{{ end }}"],
+          "foreground_templates": [
+            "{{ if gt .Code 0 }}#ef5350{{ end }}"
+          ],
           "properties": {
             "always_enabled": true
           },
