@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "transient_prompt": {
     "enabled": true,
-    "foreground": "#ecf7fa",
+    "foreground": "#EBDBB2",
     "template": "───> "
   },
   "blocks": [
@@ -12,13 +12,13 @@
         {
           "type": "text",
           "style": "plain",
-          "foreground": "#dddddd",
+          "foreground": "#EBDBB2",
           "template": "╭─["
         },
         {
           "type": "os",
           "style": "plain",
-          "foreground": "#0077c2",
+          "foreground": "#458588",
           "template": "{{.Icon}} ",
           "properties": {
             "windows": "",
@@ -28,7 +28,7 @@
           }
         },
         {
-          "foreground": "#0077c2",
+          "foreground": "#458588",
           "style": "plain",
           "template": "{{ .Name }}",
           "type": "shell"
@@ -36,7 +36,7 @@
         {
           "type": "text",
           "style": "plain",
-          "foreground": "#dddddd",
+          "foreground": "#EBDBB2",
           "template": "]-["
         },
         {
@@ -47,12 +47,12 @@
             "style": "agnoster_short",
             "max_depth": 5
           },
-          "foreground": "#FF9248"
+          "foreground": "#d65d0e"
         },
         {
           "type": "text",
           "style": "plain",
-          "foreground": "#dddddd",
+          "foreground": "#EBDBB2",
           "template": "]"
         }
       ],
@@ -65,26 +65,26 @@
         {
           "type": "node",
           "style": "plain",
-          "foreground": "#3C873A",
-          "template": "<#dddddd>(</> {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}<#dddddd>)</>"
+          "foreground": "#669A68",
+          "template": "<#EBDBB2>(</> {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}<#EBDBB2>)</>"
         },
         {
           "type": "angular",
           "style": "plain",
-          "foreground": "#ce092f",
-          "template": "<#dddddd>(</> {{ .Full }}<#dddddd>)</>"
+          "foreground": "#cc241d",
+          "template": "<#EBDBB2>(</> {{ .Full }}<#EBDBB2>)</>"
         },
         {
           "type": "react",
           "style": "plain",
           "foreground": "#7cb0e4",
-          "template": "<#dddddd>(</> {{ .Full }}<#dddddd>)</>"
+          "template": "<#EBDBB2>(</> {{ .Full }}<#EBDBB2>)</>"
         },
         {
           "type": "tauri",
           "style": "plain",
           "foreground": "#24c8db",
-          "template": "<#dddddd>(</> {{ .Full }}<#dddddd>)</>"
+          "template": "<#EBDBB2>(</> {{ .Full }}<#EBDBB2>)</>"
         },
         {
           "type": "svelte",
@@ -95,13 +95,13 @@
         {
           "foreground": "#0d6da8",
           "style": "plain",
-          "template": "<#dddddd>(</> {{ if .Unsupported }} {{ else }}{{ .Full }}{{ end }}<#dddddd>)</>",
+          "template": "<#EBDBB2>(</> {{ if .Unsupported }} {{ else }}{{ .Full }}{{ end }}<#EBDBB2>)</>",
           "type": "dotnet"
         },
         {
           "type": "text",
           "style": "plain",
-          "foreground": "#dddddd",
+          "foreground": "#EBDBB2",
           "template": "  "
         }
       ]
@@ -114,10 +114,10 @@
           "style": "plain",
           "template": "╰─",
           "type": "text",
-          "foreground": "#dddddd"
+          "foreground": "#EBDBB2"
         },
         {
-          "foreground": "#FFFB38",
+          "foreground": "#d79921",
           "foreground_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#ffeb95{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#c5e478{{ end }}",
@@ -130,17 +130,17 @@
             "fetch_upstream_icon": true
           },
           "style": "plain",
-          "template": "<#dddddd>[</>{{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}<#ef5350> \uf046 {{ .Staging.String }}</>{{ end }}<#dddddd>]</>",
+          "template": "<#EBDBB2>[</>{{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}<#ef5350> \uf046 {{ .Staging.String }}</>{{ end }}<#EBDBB2>]</>",
           "type": "git"
         },
         {
-          "foreground": "#ef5350",
+          "foreground": "#cc241d",
           "style": "plain",
           "template": "ROOT",
           "type": "root"
         },
         {
-          "foreground": "#ecf7fa",
+          "foreground": "#EBDBB2",
           "foreground_templates": [
             "{{ if gt .Code 0 }}#ef5350{{ end }}"
           ],
