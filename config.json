@@ -19,19 +19,19 @@
           "type": "os",
           "style": "plain",
           "foreground": "#458588",
-          "template": "{{.Icon}} ",
-          "properties": {
-            "windows": "",
-            "wsl": "",
-            "linux": "",
-            "mac": ""
-          }
+          "template": "{{.Icon}} "
         },
         {
           "foreground": "#458588",
           "style": "plain",
           "template": "{{ .Name }}",
           "type": "shell"
+        },
+        {
+          "type": "session",
+          "style": "plain",
+          "foreground": "#458588",
+          "template": " -> {{ if .SSHSession }} {{ end }}{{ .UserName }}{{ if .SSHSession }}@{{.HostName}}{{ end }}"
         },
         {
           "type": "text",
@@ -43,7 +43,7 @@
           "type": "path",
           "style": "plain",
           "template": "{{ .Path }}",
-          "properties": {
+          "options": {
             "style": "agnoster_short",
             "max_depth": 5
           },
@@ -124,7 +124,7 @@
             "{{ if gt .Ahead 0 }}#C792EA{{ end }}",
             "{{ if gt .Behind 0 }}#C792EA{{ end }}"
           ],
-          "properties": {
+          "options": {
             "branch_icon": "\ue725 ",
             "fetch_status": true,
             "fetch_upstream_icon": true
@@ -144,7 +144,7 @@
           "foreground_templates": [
             "{{ if gt .Code 0 }}#ef5350{{ end }}"
           ],
-          "properties": {
+          "options": {
             "always_enabled": true
           },
           "style": "plain",
