@@ -28,10 +28,16 @@
           "type": "shell"
         },
         {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#EBDBB2",
+          "template": "]-["
+        },
+        {
           "type": "session",
           "style": "plain",
-          "foreground": "#458588",
-          "template": " -> {{ if .SSHSession }} {{ end }}{{ .UserName }}{{ if .SSHSession }}@{{.HostName}}{{ end }}"
+          "foreground": "#b16286",
+          "template": "{{ if .SSHSession }} {{ end }}{{.UserName}}@{{.HostName}}"
         },
         {
           "type": "text",
@@ -144,12 +150,12 @@
           "foreground_templates": [
             "{{ if gt .Code 0 }}#ef5350{{ end }}"
           ],
+          "style": "plain",
+          "template": "> ",
+          "type": "text",
           "options": {
             "always_enabled": true
-          },
-          "style": "plain",
-          "template": "─> ",
-          "type": "status"
+          }
         }
       ],
       "type": "prompt"
