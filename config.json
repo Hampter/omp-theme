@@ -99,6 +99,12 @@
           "template": "<#dddddd>(</> {{ .Full }}<#dddddd>)</>"
         },
         {
+          "type": "rust",
+          "style": "plain",
+          "foreground": "#8f1c1c",
+          "template": "<#dddddd>(</> {{ .Full }}<#dddddd>)</>"
+        },
+        {
           "foreground": "#0d6da8",
           "style": "plain",
           "template": "<#EBDBB2>(</> {{ if .Unsupported }} {{ else }}{{ .Full }}{{ end }}<#EBDBB2>)</>",
