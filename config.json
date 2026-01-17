@@ -37,6 +37,9 @@
           "type": "session",
           "style": "plain",
           "foreground": "#b16286",
+          "foreground_templates": [
+            "{{ if .SSHSession }}#cc241d{{ end }}",
+          ],
           "template": "{{ if .SSHSession }} {{ end }}{{.UserName}}@{{.HostName}}"
         },
         {
